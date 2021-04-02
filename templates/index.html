@@ -1,23 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>My first Vue app</title>
+    <title>My first Vue app</title>
 <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 </head>
 <body>
 <h1>Hello World</h1>
-  <div id="app">
-    [[ message ]]
-  </div>
-  <script>
+<div id="app">
+    [[ title ]]
+</div>
+<script>
   var app = new Vue({
   el: '#app',
   delimiters: ['[[', ']]'],
   data: {
   title: "Vue"}
 })
+
 </script>
-<!-- <script src="'{{ url_for('static', filename='index.js') }}"></script> !-->
+
 </body>
 </html>
 
