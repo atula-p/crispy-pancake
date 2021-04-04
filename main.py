@@ -30,6 +30,10 @@ def contact():
 def faq():
     return render_template('faq.html')
 
+@app.route('/layout')
+def layout():
+    return render_template('layout.html')
+
 
 if __name__ == '__main__':
     app.run(debug=True)
