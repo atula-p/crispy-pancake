@@ -8,7 +8,6 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Modern Business - Start Bootstrap Template</title>
 
   <!-- Bootstrap core CSS -->
   <link href="./static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -250,6 +249,10 @@
   <script src="./static/vendor/jquery/jquery.min.js"></script>
   <script src="./static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
+{% extends "layout.html" %}
+{% block content %}
+{{ super() }}
+{% endblock %}
 
 </body>
 
