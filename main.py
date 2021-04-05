@@ -5,7 +5,6 @@ app = Flask(__name__)
 #def hello():
 #    return 'yoohoo!'
 
-
 @app.route('/')
 def cal():
     return render_template('index.html')

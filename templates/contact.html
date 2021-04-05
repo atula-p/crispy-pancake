@@ -20,30 +20,6 @@
 
 <body>
 
-  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="/">Fahrschule Varol</a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="/about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/booking">Booking</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/contact">Contact</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/faq">FAQ</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
   <!-- Page Content -->
   <div class="container">
 
@@ -148,7 +124,10 @@
   <!-- Do not edit these files! In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
   <script src="./static/js/jqBootstrapValidation.js"></script>
   <script src="./static/js/contact_me.js"></script>
-
+{% extends "layout.html" %}
+{% block content %}
+{{ super() }}
+{% endblock %}
 </body>
 
 </html>
