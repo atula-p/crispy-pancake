@@ -8,7 +8,7 @@ babel = Babel(app)
 
 @babel.localeselector
 def get_locale():
-    return 'de'
+    return 'en'
     #request.accept_languages.best_match(['en', 'de'])
 
 #@app.route('/')
@@ -26,7 +26,8 @@ def index():
 
 @app.route('/about')
 def about():
-    return render_template('about.html')
+    driving_school = gettext('Driving School')
+    return render_template('about.html', driving_school=driving_school)
 
 
 @app.route('/booking')
