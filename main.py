@@ -18,16 +18,27 @@ def get_locale():
 
 @app.route('/')
 def index():
-    driving_school = gettext('Driving School')
-    greetings = gettext('Hi, how are you?')
-    answer = gettext('I am fine')
-    return render_template('index.html', driving_school=driving_school, greetings=greetings, answer=answer)
+    return render_template('index_eng.html')
+
+
+@app.route('/index_eng')
+def index_eng():
+    return render_template('index_eng.html')
+
+
+@app.route('/index_ger')
+def index_ger():
+    return render_template('index_ger.html')
+
+
+@app.route('/index_tur')
+def index_tur():
+    return render_template('index_tur.html')
 
 
 @app.route('/about')
 def about():
-    driving_school = gettext('Driving School')
-    return render_template('about.html', driving_school=driving_school)
+    return render_template('about.html')
 
 
 @app.route('/booking')
